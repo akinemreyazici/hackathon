@@ -1,0 +1,167 @@
+[
+  {
+    "product": "T-Shirt",
+    "category": "Giyim",
+    "price": 120
+  },
+  {
+    "product": "Kot Pantolon",
+    "category": "Giyim",
+    "price": 250
+  },
+  {
+    "product": "Sneaker",
+    "category": "Giyim",
+    "price": 300
+  },
+  {
+    "product": "Kol Saati",
+    "category": "Giyim",
+    "price": 450
+  },
+  {
+    "product": "Kazak",
+    "category": "Giyim",
+    "price": 100
+  },
+  {
+    "product": "Otobüs Bileti",
+    "category": "Ulaşım",
+    "price": 75
+  },
+  {
+    "product": "Taksi",
+    "category": "Ulaşım",
+    "price": 50
+  },
+  {
+    "product": "Uçak Bileti",
+    "category": "Ulaşım",
+    "price": 600
+  },
+  {
+    "product": "Metro Bileti",
+    "category": "Ulaşım",
+    "price": 10
+  },
+  {
+    "product": "Tren Bileti",
+    "category": "Ulaşım",
+    "price": 45
+  },
+  {
+    "product": "Sinema Bileti",
+    "category": "Eğlence",
+    "price": 40
+  },
+  {
+    "product": "Tiyatro Bileti",
+    "category": "Eğlence",
+    "price": 30
+  },
+  {
+    "product": "Konser Bileti",
+    "category": "Eğlence",
+    "price": 150
+  },
+  {
+    "product": "Oyun Konsolu",
+    "category": "Elektronik",
+    "price": 5000
+  },
+  {
+    "product": "Cep Telefonu",
+    "category": "Elektronik",
+    "price": 12000
+  },
+  {
+    "product": "Dizüstü Bilgisayar",
+    "category": "Elektronik",
+    "price": 8000
+  },
+  {
+    "product": "Televizyon",
+    "category": "Elektronik",
+    "price": 6000
+  },
+  {
+    "product": "Kulaklık",
+    "category": "Elektronik",
+    "price": 300
+  },
+  {
+    "product": "Elma",
+    "category": "Market",
+    "price": 15
+  },
+  {
+    "product": "Ekmek",
+    "category": "Market",
+    "price": 5
+  },
+  {
+    "product": "Süt",
+    "category": "Market",
+    "price": 12
+  },
+  {
+    "product": "Peynir",
+    "category": "Market",
+    "price": 25
+  },
+  {
+    "product": "Yoğurt",
+    "category": "Market",
+    "price": 20
+  },
+  {
+    "product": "Deterjan",
+    "category": "Diğer",
+    "price": 35
+  },
+  {
+    "product": "Kitap",
+    "category": "Diğer",
+    "price": 60
+  },
+  {
+    "product": "Oyuncak",
+    "category": "Diğer",
+    "price": 50
+  },
+  {
+    "product": "Çiçek",
+    "category": "Diğer",
+    "price": 100
+  },
+  {
+    "product": "Masa",
+    "category": "Diğer",
+    "price": 300
+  },
+  {
+    "product": "Kahve",
+    "category": "Yeme-İçme",
+    "price": 30
+  },
+  {
+    "product": "Hamburger",
+    "category": "Yeme-İçme",
+    "price": 50
+  },
+  {
+    "product": "Pizza",
+    "category": "Yeme-İçme",
+    "price": 80
+  },
+  {
+    "product": "Pasta",
+    "category": "Yeme-İçme",
+    "price": 70
+  },
+  {
+    "product": "Dondurma",
+    "category": "Yeme-İçme",
+    "price": 40
+  }
+]

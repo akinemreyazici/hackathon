@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "701137738652",
+    "project_id": "hackathonshyonei",
+    "storage_bucket": "hackathonshyonei.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701137738652:android:74ee0e30664c348ebd4659",
+        "android_client_info": {
+          "package_name": "com.works.hackathon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1UMgHl4_1U4pDlWukRkZ0MKFrSEqb0Eg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
