@@ -10,4 +10,14 @@
         android:name="com.works.hackathon.view.HomepageFragment"
         android:label="fragment_homepage"
         tools:layout="@layout/fragment_homepage" />
+    <fragment
+        android:id="@+id/expensesFragment"
+        android:name="com.works.hackathon.view.ExpensesFragment"
+        android:label="fragment_expenses"
+        tools:layout="@layout/fragment_expenses" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.works.hackathon.view.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

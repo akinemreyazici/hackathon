@@ -7,13 +7,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.works.hackathon.R
+import com.works.hackathon.databinding.FragmentHomepageBinding
+import com.works.hackathon.databinding.FragmentLoginBinding
 import com.works.hackathon.viewmodel.HomepageViewModel
+import com.works.hackathon.viewmodel.LoginViewModel
 
 class HomepageFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = HomepageFragment()
-    }
+    private var _binding: FragmentHomepageBinding? = null
+    private val binding get() = _binding!!
+
+
 
     private lateinit var viewModel: HomepageViewModel
 
@@ -21,13 +25,18 @@ class HomepageFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_homepage, container, false)
+        viewModel = ViewModelProvider(
+            this,
+            ViewModelProvider.AndroidViewModelFactory.getInstance(requireActivity().application)
+        ).get(HomepageViewModel::class.java)
+
+        _binding = FragmentHomepageBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(HomepageViewModel::class.java)
-        // TODO: Use the ViewModel
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
     }
 
 }
