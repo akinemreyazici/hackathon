@@ -49,7 +49,7 @@ class ProductsFragment : Fragment() {
             GridLayoutManager(context, 2, LinearLayoutManager.VERTICAL, false)
 
         viewModel.expenseProductsList.observe(viewLifecycleOwner) { expenseProducts ->
-            expensesAdapter = ExpenseProductsAdapter(requireContext(), expenseProducts)
+            expensesAdapter = ExpenseProductsAdapter(requireContext(), requireActivity().application,expenseProducts)
             binding.expenseProductsRW.adapter = expensesAdapter
             binding.expenseProductsRW.layoutManager = layoutManager
         }

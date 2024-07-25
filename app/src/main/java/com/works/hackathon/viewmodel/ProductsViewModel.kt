@@ -1,14 +1,16 @@
 package com.works.hackathon.viewmodel
 
-import ItemRepository
+import com.works.hackathon.services.ItemRepository
 import android.app.Application
 import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.room.Room
+import com.works.hackathon.config.AppDatabase
 import com.works.hackathon.config.RetrofitClient
 import com.works.hackathon.model.ExpenseProduct
-import com.works.hackathon.model.ExpenseProducts
+import com.works.hackathon.room.ExpenseProductRoomRepositories
 import com.works.hackathon.services.ExpenseProductService
 import retrofit2.Call
 import retrofit2.Callback
@@ -19,6 +21,8 @@ class ProductsViewModel(application: Application) : AndroidViewModel(application
     private val client = RetrofitClient.getClient()
     private val expenseService = client.create(ExpenseProductService::class.java)
     private val itemRepository = ItemRepository(application.applicationContext)
+
+
 
     val expenseProductsList: LiveData<List<ExpenseProduct>> get() = _expenseProductsList
     private val _expenseProductsList = MutableLiveData<List<ExpenseProduct>>()

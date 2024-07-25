@@ -21,11 +21,11 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 
-class ExpenseProductsAdapter(
+class MyExpensesAdapter(
     private val context: Context,
     private val application: Application,
     private var items: List<ExpenseProduct>,
-) : RecyclerView.Adapter<ExpenseProductsAdapter.ExpenseProductsViewHolder>() {
+) : RecyclerView.Adapter<MyExpensesAdapter.ExpenseProductsViewHolder>() {
 
     private val db: AppDatabase = Room.databaseBuilder(
         application,
