@@ -7,9 +7,24 @@ import kotlinx.coroutines.withContext
 
 class ExpenseProductRoomRepositories(private val productDao: ExpenseProductDao) {
 
-    suspend fun addProducts(product: ExpenseProduct): Long {
+    suspend fun addOrUpdateProduct(product: ExpenseProduct): Long {
         return withContext(Dispatchers.IO) {
-            productDao.addProducts(product)
+            val existingProduct = productDao.getProductByTitleAndCategory(product.title, product.category)
+            if (existingProduct != null) {
+                productDao.updateProductQuantityAndPrice(
+                    existingProduct.expenseProductId ?: -1,
+                    product.price
+                )
+                existingProduct.expenseProductId?.toLong() ?: -1L
+            } else {
+                productDao.addProducts(
+                    ExpenseProduct(
+                        title = product.title,
+                        price = product.price,
+                        category = product.category,
+                        image = product.image,
+                        quantity = 1)) // Varsayılan olarak 1
+            }
         }
     }
 

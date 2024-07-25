@@ -37,4 +37,5 @@
     <color name="switchColorPassive1">#A59F9F</color>
     <color name="switchColorPassive2">#C3BDBD</color>
     <color name="custom_background_color">#288628</color>
+    <color name="default_color">#0478ed</color>
 </resources>

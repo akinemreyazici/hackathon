@@ -55,8 +55,8 @@ class ExpenseProductsAdapter(
         holder.expenseProductTitle.text = product.title
 
         holder.expenseProductButton.setOnClickListener {
-            CoroutineScope(Dispatchers.Main).launch {
-                productRoomRepositories.addProducts(product)
+            CoroutineScope(Dispatchers.IO).launch {
+                productRoomRepositories.addOrUpdateProduct(product)
             }
         }
     }

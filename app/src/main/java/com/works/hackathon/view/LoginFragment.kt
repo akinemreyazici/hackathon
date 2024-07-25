@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import com.works.hackathon.HomeActivity
+import com.works.hackathon.activities.HomeActivity
 import com.works.hackathon.databinding.FragmentLoginBinding
 import com.works.hackathon.manager.PrefManager
 import com.works.hackathon.viewmodel.LoginViewModel

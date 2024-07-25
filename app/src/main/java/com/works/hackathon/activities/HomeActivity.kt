@@ -1,9 +1,10 @@
-package com.works.hackathon
+package com.works.hackathon.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
+import com.works.hackathon.R
 import com.works.hackathon.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {

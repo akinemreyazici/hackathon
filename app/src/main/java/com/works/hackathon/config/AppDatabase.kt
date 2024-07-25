@@ -7,7 +7,7 @@ import com.works.hackathon.room.ExpenseProductDao
 
 
 
-@Database(entities = [ExpenseProduct::class], version = 1)
+@Database(entities = [ExpenseProduct::class], version = 2)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun expenseProductDao(): ExpenseProductDao
 }

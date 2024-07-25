@@ -38,6 +38,7 @@ class HomepageFragment : Fragment() {
 
 
         viewModel = ViewModelProvider(requireActivity())[HomepageViewModel::class.java]
+        viewModel.clearLocalData()
 
         _binding = FragmentHomepageBinding.inflate(inflater, container, false)
         return binding.root

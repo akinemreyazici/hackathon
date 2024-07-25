@@ -23,8 +23,8 @@ import kotlinx.coroutines.launch
 
 class MyExpensesAdapter(
     private val context: Context,
-    private val application: Application,
     private var items: List<ExpenseProduct>,
+    private val application: Application,
 ) : RecyclerView.Adapter<MyExpensesAdapter.ExpenseProductsViewHolder>() {
 
     private val db: AppDatabase = Room.databaseBuilder(
@@ -37,26 +37,30 @@ class MyExpensesAdapter(
     private val productRoomRepositories = ExpenseProductRoomRepositories(productDao)
 
     inner class ExpenseProductsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val expenseProductImage: ImageView = itemView.findViewById(R.id.expenseProductImage)
-        val expenseProductButton: Button = itemView.findViewById(R.id.expenseProductAddBtn)
-        val expenseProductPrice: TextView = itemView.findViewById(R.id.txtExpenseProductPrice)
-        val expenseProductTitle: TextView = itemView.findViewById(R.id.expenseProductTitle)
+        val expenseProductImage: ImageView = itemView.findViewById(R.id.myExpensesImage)
+        val expenseProductPrice: TextView = itemView.findViewById(R.id.myExpensesPrice)
+        val expenseProductTitle: TextView = itemView.findViewById(R.id.myExpensesTitle)
+        val expenseProductQuantity: TextView = itemView.findViewById(R.id.myExpensesQuantity)
+        val expenseProductButton : Button = itemView.findViewById(R.id.myExpensesBtnRemove)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ExpenseProductsViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.list_expense_product, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.list_my_expenses, parent, false)
         return ExpenseProductsViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ExpenseProductsViewHolder, position: Int) {
         val product = items[position]
         Glide.with(context).load(product.image).into(holder.expenseProductImage)
-        holder.expenseProductPrice.text = product.price.toString()
+        holder.expenseProductPrice.text = product.price.toString() + " ₺"
         holder.expenseProductTitle.text = product.title
+        holder.expenseProductQuantity.text = product.quantity.toString()
 
         holder.expenseProductButton.setOnClickListener {
             CoroutineScope(Dispatchers.Main).launch {
-                productRoomRepositories.addProducts(product)
+                productRoomRepositories.deleteProduct(product)
+                val list = productRoomRepositories.getAllProducts()
+                updateData(list)
             }
         }
     }

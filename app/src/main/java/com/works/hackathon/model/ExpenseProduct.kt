@@ -14,10 +14,10 @@ data class ExpenseProduct (
     @PrimaryKey(autoGenerate = true)
     val expenseProductId: Int? = null,
 
-    val title: String,
+    val title: String?,
     val price: Double,
-    val category: String,
-    val image: String,
+    val category: String?,
+    val image: String?,
 
-    val quantity: Int
+    val quantity: Int = 1
 )
