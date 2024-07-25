@@ -62,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@+id/emailLogintextView" />
 
     <TextView
-        android:id="@+id/passwordLogintextView"
+        android:id="@+id/passwordRegisterTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
@@ -93,13 +93,14 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordLogintextView" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordRegisterTextView" />
 
     <TextView
         android:id="@+id/txtLoginRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:clickable="true"
         android:text="Kayıt ol"
         android:textSize="16sp"
         android:textStyle="bold"

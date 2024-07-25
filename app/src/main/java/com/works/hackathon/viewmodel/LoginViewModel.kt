@@ -12,7 +12,11 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
-                    onComplete(true, null)
+                    if (auth.currentUser?.isEmailVerified == true) {
+                        onComplete(true, null)
+                    } else {
+                        onComplete(false, "Please verify your email address.")
+                    }
                 } else {
                     onComplete(false, task.exception?.message)
                 }

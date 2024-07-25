@@ -9,7 +9,7 @@
 
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/loginButton"
+        android:id="@+id/registerButton"
         style="@android:style/Widget.Button"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -25,7 +25,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtLoginRegister" />
+        app:layout_constraintTop_toBottomOf="@+id/txtRegisterLogin" />
 
     <TextView
         android:id="@+id/emailLogintextView"
@@ -43,7 +43,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/emailLoginEditText"
+        android:id="@+id/emailRegisterEditText"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="48dp"
@@ -74,10 +74,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailLoginEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/emailRegisterEditText" />
 
     <EditText
-        android:id="@+id/passwordLoginEditText"
+        android:id="@+id/passwordRegisterEditText"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="48dp"
@@ -96,15 +96,16 @@
         app:layout_constraintTop_toBottomOf="@+id/passwordLogintextView" />
 
     <TextView
-        android:id="@+id/txtLoginRegister"
+        android:id="@+id/txtRegisterLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Giriş Yap"
+        android:clickable="true"
+        android:text="Kayıt ol"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/loginButton"
-        app:layout_constraintTop_toBottomOf="@+id/passwordLoginEditText" />
+        app:layout_constraintEnd_toEndOf="@+id/registerButton"
+        app:layout_constraintTop_toBottomOf="@+id/passwordRegisterEditText" />
 
     <TextView
         android:id="@+id/textView4"
@@ -114,6 +115,6 @@
         android:layout_marginEnd="16dp"
         android:text="Hesabın var mı?"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/txtLoginRegister"
-        app:layout_constraintTop_toBottomOf="@+id/passwordLoginEditText" />
+        app:layout_constraintEnd_toStartOf="@+id/txtRegisterLogin"
+        app:layout_constraintTop_toBottomOf="@+id/passwordRegisterEditText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
