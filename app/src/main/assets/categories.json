@@ -1,0 +1,35 @@
+[
+  {
+    "category": "electronics",
+    "image" : "https://cdn-icons-png.flaticon.com/512/5819/5819387.png"
+  },
+  {
+    "category": "men's clothing",
+    "image" : "https://cdn-icons-png.freepik.com/512/68/68948.png"
+
+  },
+  {
+    "category": "women's clothing",
+    "image" : "https://cdn-icons-png.flaticon.com/512/105/105956.png"
+
+  },
+  {
+    "category": "jewelery",
+    "image" : "https://cdn-icons-png.flaticon.com/512/2361/2361685.png"
+
+  },
+  {
+    "category": "grocery",
+    "image" : "https://cdn-icons-png.flaticon.com/512/135/135763.png"
+
+  },
+  {
+    "category": "food&drink",
+    "image" : "https://cdn-icons-png.freepik.com/512/3161/3161881.png"
+
+  },
+  {
+    "category": "other",
+    "image" : "https://w7.pngwing.com/pngs/267/532/png-transparent-computer-icons-icon-design-others-miscellaneous-blue-text.png"
+  }
+]

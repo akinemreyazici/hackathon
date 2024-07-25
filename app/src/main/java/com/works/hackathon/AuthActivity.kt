@@ -11,11 +11,6 @@ class AuthActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auth)
 
-        val itemRepository = ItemRepository(this)
 
-        val items = itemRepository.getDataFromJson("data.json")
-        items?.forEach {
-            Log.e("Item", "Name: ${it.name}, Price: ${it.price}")
-        }
     }
 }

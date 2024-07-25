@@ -9,7 +9,11 @@
         android:id="@+id/homepageFragment"
         android:name="com.works.hackathon.view.HomepageFragment"
         android:label="fragment_homepage"
-        tools:layout="@layout/fragment_homepage" />
+        tools:layout="@layout/fragment_homepage" >
+        <action
+            android:id="@+id/action_homepageFragment_to_productsFragment"
+            app:destination="@id/productsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/expensesFragment"
         android:name="com.works.hackathon.view.ExpensesFragment"
@@ -20,4 +24,13 @@
         android:name="com.works.hackathon.view.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.works.hackathon.view.ProductsFragment"
+        android:label="fragment_products"
+        tools:layout="@layout/fragment_products" >
+        <argument
+            android:name="category"
+            app:argType="string" />
+    </fragment>
 </navigation>

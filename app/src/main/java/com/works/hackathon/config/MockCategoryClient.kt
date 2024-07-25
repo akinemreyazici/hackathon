@@ -1,11 +1,12 @@
 import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.works.hackathon.model.Item
 
-class StoreRepository(private val context: Context) {
+import com.works.hackathon.model.Category
 
-    fun getDataFromJson(fileName: String): List<Item>? {
+class CategoryRepository(private val context: Context) {
+
+    fun getCategoriesFromJson(fileName: String): List<Category>? {
         val jsonString = readJsonFromAssets(fileName)
         return jsonString?.let {
             parseJsonToList(it)
@@ -26,9 +27,10 @@ class StoreRepository(private val context: Context) {
         }
     }
 
-    private fun parseJsonToList(jsonString: String): List<Item> {
+    private fun parseJsonToList(jsonString: String): List<Category> {
         val gson = Gson()
-        return gson.fromJson(jsonString, object : TypeToken<List<Item>>() {}.type)
+        return gson.fromJson(jsonString, object : TypeToken<List<Category>>() {}.type)
     }
 }
+
 

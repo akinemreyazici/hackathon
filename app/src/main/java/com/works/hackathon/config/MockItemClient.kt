@@ -1,11 +1,11 @@
 import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.works.hackathon.model.Item
+import com.works.hackathon.model.ExpenseProduct
 
 class ItemRepository(private val context: Context) {
 
-    fun getDataFromJson(fileName: String): List<Item>? {
+    fun getDataFromJson(fileName: String): List<ExpenseProduct>? {
         val jsonString = readJsonFromAssets(fileName)
         return jsonString?.let {
             parseJsonToList(it)
@@ -26,9 +26,9 @@ class ItemRepository(private val context: Context) {
         }
     }
 
-    private fun parseJsonToList(jsonString: String): List<Item> {
+    private fun parseJsonToList(jsonString: String): List<ExpenseProduct> {
         val gson = Gson()
-        return gson.fromJson(jsonString, object : TypeToken<List<Item>>() {}.type)
+        return gson.fromJson(jsonString, object : TypeToken<List<ExpenseProduct>>() {}.type)
     }
 }
 
