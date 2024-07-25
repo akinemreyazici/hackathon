@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit
 
 object RetrofitClient {
 
-    private const val Base_URL = "https://fakestoreapi.com/"
+    private const val Base_URL = "https://fakestoreapi.com"
     private var retrofit: Retrofit? = null
 
     private val client = OkHttpClient.Builder()

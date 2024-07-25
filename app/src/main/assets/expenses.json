@@ -1,167 +1,127 @@
 [
   {
     "product": "T-Shirt",
-    "category": "Giyim",
+    "category": "men's clothing",
     "price": 120
   },
   {
     "product": "Kot Pantolon",
-    "category": "Giyim",
+    "category": "men's clothing",
     "price": 250
   },
   {
     "product": "Sneaker",
-    "category": "Giyim",
+    "category": "men's clothing",
     "price": 300
   },
   {
     "product": "Kol Saati",
-    "category": "Giyim",
+    "category": "women's clothing",
     "price": 450
   },
   {
     "product": "Kazak",
-    "category": "Giyim",
+    "category": "women's clothing",
     "price": 100
   },
   {
-    "product": "Otobüs Bileti",
-    "category": "Ulaşım",
-    "price": 75
-  },
-  {
-    "product": "Taksi",
-    "category": "Ulaşım",
-    "price": 50
-  },
-  {
-    "product": "Uçak Bileti",
-    "category": "Ulaşım",
-    "price": 600
-  },
-  {
-    "product": "Metro Bileti",
-    "category": "Ulaşım",
-    "price": 10
-  },
-  {
-    "product": "Tren Bileti",
-    "category": "Ulaşım",
-    "price": 45
-  },
-  {
-    "product": "Sinema Bileti",
-    "category": "Eğlence",
-    "price": 40
-  },
-  {
-    "product": "Tiyatro Bileti",
-    "category": "Eğlence",
-    "price": 30
-  },
-  {
-    "product": "Konser Bileti",
-    "category": "Eğlence",
-    "price": 150
-  },
-  {
     "product": "Oyun Konsolu",
-    "category": "Elektronik",
+    "category": "electronics",
     "price": 5000
   },
   {
     "product": "Cep Telefonu",
-    "category": "Elektronik",
+    "category": "electronics",
     "price": 12000
   },
   {
     "product": "Dizüstü Bilgisayar",
-    "category": "Elektronik",
+    "category": "electronics",
     "price": 8000
   },
   {
     "product": "Televizyon",
-    "category": "Elektronik",
+    "category": "electronics",
     "price": 6000
   },
   {
     "product": "Kulaklık",
-    "category": "Elektronik",
+    "category": "electronics",
     "price": 300
   },
   {
     "product": "Elma",
-    "category": "Market",
+    "category": "grocery",
     "price": 15
   },
   {
     "product": "Ekmek",
-    "category": "Market",
+    "category": "grocery",
     "price": 5
   },
   {
     "product": "Süt",
-    "category": "Market",
+    "category": "grocery",
     "price": 12
   },
   {
     "product": "Peynir",
-    "category": "Market",
+    "category": "grocery",
     "price": 25
   },
   {
     "product": "Yoğurt",
-    "category": "Market",
+    "category": "grocery",
     "price": 20
   },
   {
     "product": "Deterjan",
-    "category": "Diğer",
+    "category": "other",
     "price": 35
   },
   {
     "product": "Kitap",
-    "category": "Diğer",
+    "category": "other",
     "price": 60
   },
   {
     "product": "Oyuncak",
-    "category": "Diğer",
+    "category": "other",
     "price": 50
   },
   {
     "product": "Çiçek",
-    "category": "Diğer",
+    "category": "other",
     "price": 100
   },
   {
     "product": "Masa",
-    "category": "Diğer",
+    "category": "other",
     "price": 300
   },
   {
     "product": "Kahve",
-    "category": "Yeme-İçme",
+    "category": "food&drink",
     "price": 30
   },
   {
     "product": "Hamburger",
-    "category": "Yeme-İçme",
+    "category": "food&drink",
     "price": 50
   },
   {
     "product": "Pizza",
-    "category": "Yeme-İçme",
+    "category": "food&drink",
     "price": 80
   },
   {
     "product": "Pasta",
-    "category": "Yeme-İçme",
+    "category": "food&drink",
     "price": 70
   },
   {
     "product": "Dondurma",
-    "category": "Yeme-İçme",
+    "category": "food&drink",
     "price": 40
   }
 ]

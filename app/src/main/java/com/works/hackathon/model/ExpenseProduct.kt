@@ -5,6 +5,7 @@ data class ExpenseProducts(
     val products: List<ExpenseProduct>
 )
 
+@Entity(tableName = "expenses")
 data class ExpenseProduct (
     val title: String,
     val price: Double,

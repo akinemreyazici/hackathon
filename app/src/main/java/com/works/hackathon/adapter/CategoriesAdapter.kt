@@ -56,8 +56,8 @@ class CategoriesAdapter(
     }
 
     @SuppressLint("NotifyDataSetChanged")
-    fun updateData(newProductList: List<Category>) {
-        items = newProductList
+    fun updateData(newCategoryList: List<Category>) {
+        items = newCategoryList
         notifyDataSetChanged()
     }
 }

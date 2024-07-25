@@ -12,6 +12,13 @@ class ItemRepository(private val context: Context) {
         }
     }
 
+    fun getDataFromJsonByCategory(fileName: String, category: String): List<ExpenseProduct>? {
+        val jsonString = readJsonFromAssets(fileName)
+        return jsonString?.let {
+            parseJsonToList(it)?.filter { item -> item.category == category }
+        }
+    }
+
     private fun readJsonFromAssets(fileName: String): String? {
         return try {
             val inputStream = context.assets.open(fileName)
